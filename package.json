@@ -1,0 +1,26 @@
+{
+  "name": "testcypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^15.0.0",
+    "cucumber": "^6.0.5"
+  },
+  "devDependencies": {
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "@esbuild-plugins/node-modules-polyfill": "^0.1.4",
+    "cypress": "^12.2.0",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/e2e/test/step_definition.js",
+    "nonGlobalStepDefinitions": true
+  },
+  "keywords": [],
+  "author": "Jolanta Walczak",
+  "license": "ISC"
+}
